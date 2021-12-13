@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNiX Responsive W3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="singup.css">
+    <link rel="stylesheet" href="style1.css" alt="Ipad + Iphone">
+</head>
+<body>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 5%;
+    }
+
+}
+    </style>
+    <div id="main">
+      
+        <!-- navication -->
+        <div id="navication">
+          <div class="nav-left">
+              <li><a href="index.html"><b>Brand</b></a></li>
+              <li><a href="#"><b>Browse</b></a></li>
+          </div>
+        
+          <div class="nav-right">
+              <li><a href="singup.html"><b>Sign Up</b></a></li>
+              <li><a href="login.html"><b>Log In</b></a></li>
+              <li><a href="help.html"><b>Help</b></a></li>
+          </div>
+        </div>
+    <div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+        <div id="footer">
+            <div id="content-img-footer">
+                <div class="ctn-img-ft-text">
+                    <h3>Travel</h3>
+                    <p>Form apartments and rooms treethourses and boats: stay in unique spaces in 192 countries</p>
+                    <a href="#">See how to travel on airbnb</a>
+                </div>
+                <div class="ctn-img-ft-text">
+                    <h3>Host</h3>
+                    <p>Renting out your unused space could pay your bills or fund your next vacation.</p>
+                    <a href="#">Learn more about hosting</a>
+                </div>
+                <div class="ctn-img-ft-text">
+                    <h3>Trust and Safety</h3>
+                    <p>From verified ID to our worldwide customer support team, we've got your back.</p>
+                    <a href="#">Learn about trust at Airbnb</a>
+                    
+                </div>
+            </div>
+           </div>
+    </div>
+</body>
+</html>
